@@ -1,0 +1,8 @@
+# obtener listado de requerimientos
+pip freeze > requirements.txt
+
+# construir la imagen
+docker build -t <image_name> .
+
+# levantar el contenedor
+docker run -it -p 7000:4000 <image_name>
